@@ -1,4 +1,5 @@
 using Dapper;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -11,7 +12,7 @@ namespace DapperDemoApp
     public class ProdutoRepository
     {
         private string _connectionString;
-
+        //private IDbConnection Connection => new SqlConnection("sua_connection_string");
         public ProdutoRepository()
         {
             // Get connection string from App.config
@@ -20,21 +21,42 @@ namespace DapperDemoApp
 
         private IDbConnection Connection => new SqlConnection(_connectionString);
 
+
+        //teste 11/06
         public void CriarTabelaSeNaoExistir()
         {
-            using (var db = Connection)
+            try
             {
-                string sql = @"
-                IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Produtos' and xtype='U')
+                using (var db = Connection)
+                {
+                    string sql = @"
+                IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Produtos' AND xtype='U')
                 CREATE TABLE Produtos (
                     Id INT PRIMARY KEY IDENTITY(1,1),
                     Nome NVARCHAR(100) NOT NULL,
                     Preco DECIMAL(18, 2) NOT NULL
                 )
-                ";
-                db.Execute(sql);
+            ";
+                    db.Execute(sql);
+                    Log.Information("Tabela 'Produtos' verificada/criada com sucesso.");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Aqui você pode registrar o erro, lançar novamente ou tratar de forma apropriada
+                Console.WriteLine("Erro ao criar tabela Produtos: " + ex.Message);
+                Log.Error(ex, "Erro ao criar/verificar a tabela 'Produtos'");
+                // Se necessário, relance a exceção:
+                // throw;
+                // Se quiser propagar a exceção para cima, descomente a linha abaixo:
+                // throw;
             }
         }
+
+        //fim teste 
+
+
+
 
         public int AdicionarProduto(Produto produto)
         {
