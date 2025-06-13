@@ -15,5 +15,6 @@ namespace DapperDemoApp
         }
 
         public DbSet<Cliente> Clientes { get; set; }
+       //public DbSet<Produto> Produtos { get; set; }//
     }
 }

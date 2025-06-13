@@ -1,0 +1,285 @@
+2025-06-13 12:05:12.174 -03:00 [INF] Iniciando demonstração Entity Framework CRUD...
+2025-06-13 12:05:13.493 -03:00 [INF] Limpando dados existentes da tabela Produtos...
+2025-06-13 12:05:18.069 -03:00 [FTL] Erro fatal durante a execução da aplicação.
+System.InvalidOperationException: The model backing the 'AppDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   em System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   em System.Data.Entity.Internal.InternalContext.<>c__DisplayClass66_0`1.<CreateInitializationAction>b__0()
+   em System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   em System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   em System.Data.Entity.Internal.LazyInternalContext.<>c.<InitializeDatabase>b__58_0(InternalContext c)
+   em System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   em System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   em System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   em System.Data.Entity.Internal.InternalContext.Initialize()
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   em System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.RemoveRange(IEnumerable entities)
+   em System.Data.Entity.DbSet`1.RemoveRange(IEnumerable`1 entities)
+   em DapperDemoApp.Program.Main(String[] args) na C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp\Program.cs:linha 187
+2025-06-13 12:05:18.168 -03:00 [INF] Encerrando aplicação. Pressione qualquer tecla para sair...
+2025-06-13 12:18:03.532 -03:00 [INF] Iniciando demonstração Dapper CRUD...
+2025-06-13 12:18:08.434 -03:00 [INF] Criando tabela 'Produtos' se não existir...
+2025-06-13 12:18:09.057 -03:00 [INF] Tabela 'Produtos' verificada/criada com sucesso.
+2025-06-13 12:18:09.584 -03:00 [INF] Tabela 'Produtos' verificada/criada.
+2025-06-13 12:18:10.231 -03:00 [INF] Limpando dados existentes da tabela Produtos...
+2025-06-13 12:18:21.353 -03:00 [INF] Dados limpos.
+2025-06-13 12:18:21.356 -03:00 [INF] Adicionando novos produtos...
+2025-06-13 12:18:32.832 -03:00 [INF] Produto adicionado: Id: 1002, Nome: Laptop Gamer, Preço: R$ 7.500,99
+2025-06-13 12:18:32.845 -03:00 [INF] Produto adicionado: Id: 1003, Nome: Mouse Sem Fio, Preço: R$ 120,50
+2025-06-13 12:18:32.847 -03:00 [INF] Produto adicionado: Id: 1004, Nome: Teclado Mecânico RGB, Preço: R$ 450,00
+2025-06-13 12:18:32.848 -03:00 [INF] Listando todos os produtos:
+2025-06-13 12:18:32.851 -03:00 [INF] Id: 1002, Nome: Laptop Gamer, Preço: R$ 7.500,99
+2025-06-13 12:18:32.854 -03:00 [INF] Id: 1003, Nome: Mouse Sem Fio, Preço: R$ 120,50
+2025-06-13 12:18:32.855 -03:00 [INF] Id: 1004, Nome: Teclado Mecânico RGB, Preço: R$ 450,00
+2025-06-13 12:18:32.857 -03:00 [INF] Obtendo produto com Id = 1002
+2025-06-13 12:18:32.864 -03:00 [INF] Produto encontrado: Id: 1002, Nome: Laptop Gamer, Preço: R$ 7.500,99
+2025-06-13 12:18:33.485 -03:00 [INF] Atualizando produto com Id = 1002...
+2025-06-13 12:18:33.490 -03:00 [INF] Produto atualizado com sucesso!
+2025-06-13 12:18:33.492 -03:00 [INF] Novo estado: Id: 1002, Nome: Laptop Gamer Pro (Atualizado), Preço: R$ 7.999,99
+2025-06-13 12:18:33.493 -03:00 [INF] Excluindo produto com Id = 1003...
+2025-06-13 12:18:33.495 -03:00 [INF] Produto excluído com sucesso!
+2025-06-13 12:18:33.497 -03:00 [INF] Listando todos os produtos após atualizações e exclusões:
+2025-06-13 12:18:33.498 -03:00 [INF] Id: 1002, Nome: Laptop Gamer Pro (Atualizado), Preço: R$ 7.999,99
+2025-06-13 12:18:33.503 -03:00 [INF] Id: 1004, Nome: Teclado Mecânico RGB, Preço: R$ 450,00
+2025-06-13 12:18:33.504 -03:00 [INF] Demonstração Dapper CRUD concluída.
+2025-06-13 12:18:33.506 -03:00 [INF] Encerrando aplicação. Pressione qualquer tecla para sair...
+2025-06-13 13:53:34.379 -03:00 [INF] Iniciando execução...
+2025-06-13 13:54:08.638 -03:00 [INF] Resultado da API: [
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+2025-06-13 13:54:12.623 -03:00 [INF] Tabela 'Produtos' verificada/criada com sucesso.
+2025-06-13 13:54:16.845 -03:00 [INF] Produtos inseridos com sucesso após chamada da API.
+2025-06-13 13:54:16.847 -03:00 [INF] Finalizando aplicação. Pressione uma tecla para sair...
