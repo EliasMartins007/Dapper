@@ -1,30 +1,33 @@
 
+using DapperDemoApp.Controllers;
+using DapperDemoApp.Services;
+using Serilog;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Serilog;
+using DapperDemoApp.Models;
 
 namespace DapperDemoApp
 {
-       
-     class Program
+
+    class Program
 {
     static async Task Main(string[] args)
     {
-            //ConfigurarLogger();
             ILogConfiguracao logConfiguracao = new SerilogConfiguracao();
             logConfiguracao.Configurar();
-
-
         try
         {
             Log.Information("Iniciando execução...");
-
             string resultado = await ObterUsuariosDaApiAsync();
-            InserirProdutos();
+                //InserirProdutos();
+                //teste 20/06
+                var controller = new ProdutoController(new ProdutoService());
+                controller.InserirProdutosDeExemplo();
+                /// fim 
 
-            Log.Information("Produtos inseridos com sucesso após chamada da API.");
+
+                Log.Information("Produtos inseridos com sucesso após chamada da API.");
         }
         catch (Exception ex)
         {
@@ -35,14 +38,6 @@ namespace DapperDemoApp
             EncerrarAplicacao();
         }
     }
-
-    //static void ConfigurarLogger()
-    //{
-    //    Log.Logger = new LoggerConfiguration()
-    //        .WriteTo.Console()
-    //        .WriteTo.File("logs/logSerilog.txt", rollingInterval: RollingInterval.Day)
-    //        .CreateLogger();
-    //}
 
     static async Task<string> ObterUsuariosDaApiAsync()
     {
@@ -56,7 +51,6 @@ namespace DapperDemoApp
     {
         var repository = new ProdutoRepository();
         repository.CriarTabelaSeNaoExistir();
-
         var produtos = new List<Produto>
         {
             new Produto { Nome = "API Result - 1", Preco = 199.99m },

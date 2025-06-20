@@ -6,23 +6,19 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using DapperDemoApp.Models;
 
 namespace DapperDemoApp
 {
     public class ProdutoRepository
     {
         private string _connectionString;
-        //private IDbConnection Connection => new SqlConnection("sua_connection_string");
         public ProdutoRepository()
         {
-            // Get connection string from App.config
             _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         }
 
         private IDbConnection Connection => new SqlConnection(_connectionString);
-
-
-        //teste 11/06
         public void CriarTabelaSeNaoExistir()
         {
             try
@@ -52,11 +48,6 @@ namespace DapperDemoApp
                 // throw;
             }
         }
-
-        //fim teste 
-
-
-
 
         public int AdicionarProduto(Produto produto)
         {
