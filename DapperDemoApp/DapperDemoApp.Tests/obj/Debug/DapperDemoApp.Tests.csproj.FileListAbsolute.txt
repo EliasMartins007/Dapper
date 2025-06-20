@@ -140,9 +140,10 @@ C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\bin\Debug
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\obj\Debug\DapperDemoApp.Tests.csproj.AssemblyReference.cache
-C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\obj\Debug\DapperDemoApp.Tests.csproj.SuggestedBindingRedirects.cache
-C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\obj\Debug\DapperDemoApp.Tests.dll.config
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\obj\Debug\DapperDemoApp.Tests.csproj.CoreCompileInputs.cache
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\obj\Debug\DapperDe.4F8EA693.Up2Date
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\obj\Debug\DapperDemoApp.Tests.dll
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\obj\Debug\DapperDemoApp.Tests.pdb
+C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\bin\Debug\Castle.Core.dll
+C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\bin\Debug\Moq.dll
+C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp.Tests\bin\Debug\Castle.Core.xml

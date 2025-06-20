@@ -129,6 +129,7 @@
   <ItemGroup>
     <Compile Include="AppDbContext.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="ILogConfiguracao.cs" />
     <Compile Include="Migrations\202506122023150_CriarTabelaCliente.cs" />
     <Compile Include="Migrations\202506122023150_CriarTabelaCliente.Designer.cs">
       <DependentUpon>202506122023150_CriarTabelaCliente.cs</DependentUpon>
@@ -138,6 +139,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="ProdutoRepository.cs" />
+    <Compile Include="SerilogConfiguracao.cs" />
     <Compile Include="UsuarioService.cs" />
   </ItemGroup>
   <ItemGroup>

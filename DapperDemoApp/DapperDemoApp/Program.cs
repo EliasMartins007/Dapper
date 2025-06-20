@@ -12,7 +12,10 @@ namespace DapperDemoApp
 {
     static async Task Main(string[] args)
     {
-        ConfigurarLogger();
+            //ConfigurarLogger();
+            ILogConfiguracao logConfiguracao = new SerilogConfiguracao();
+            logConfiguracao.Configurar();
+
 
         try
         {
@@ -33,13 +36,13 @@ namespace DapperDemoApp
         }
     }
 
-    static void ConfigurarLogger()
-    {
-        Log.Logger = new LoggerConfiguration()
-            .WriteTo.Console()
-            .WriteTo.File("logs/logSerilog.txt", rollingInterval: RollingInterval.Day)
-            .CreateLogger();
-    }
+    //static void ConfigurarLogger()
+    //{
+    //    Log.Logger = new LoggerConfiguration()
+    //        .WriteTo.Console()
+    //        .WriteTo.File("logs/logSerilog.txt", rollingInterval: RollingInterval.Day)
+    //        .CreateLogger();
+    //}
 
     static async Task<string> ObterUsuariosDaApiAsync()
     {
