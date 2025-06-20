@@ -124,9 +124,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Services\ClienteServiceTests.cs" />
     <Compile Include="LoggerConfiguracaoTests.cs" />
+    <Compile Include="Services\ProdutoServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UsuarioServiceTests.cs" />
+    <Compile Include="Services\UsuarioServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -141,7 +143,6 @@
   <ItemGroup>
     <Folder Include="Controlles\" />
     <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
