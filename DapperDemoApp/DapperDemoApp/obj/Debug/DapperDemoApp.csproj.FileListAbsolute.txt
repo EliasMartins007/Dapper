@@ -34,3 +34,5 @@ C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp\bin\Debug\Entit
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp\obj\Debug\DapperDemoApp.Migrations.CriarTabelaCliente.resources
 C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp\obj\Debug\DapperDemoApp.csproj.GenerateResource.cache
+C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp\bin\Debug\System.ValueTuple.dll
+C:\Users\Elias\Desktop\Dapper\Dapper\DapperDemoApp\DapperDemoApp\bin\Debug\System.ValueTuple.xml

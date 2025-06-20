@@ -4,6 +4,8 @@ VisualStudioVersion = 17.0.0.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDemoApp", "DapperDemoApp\DapperDemoApp.csproj", "{ADBEFF53-2A04-4F39-8360-FE12EB25DE9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDemoApp.Tests", "DapperDemoApp.Tests\DapperDemoApp.Tests.csproj", "{99009F00-DC1C-4399-974D-013A04E2A78D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{ADBEFF53-2A04-4F39-8360-FE12EB25DE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADBEFF53-2A04-4F39-8360-FE12EB25DE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADBEFF53-2A04-4F39-8360-FE12EB25DE9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99009F00-DC1C-4399-974D-013A04E2A78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99009F00-DC1C-4399-974D-013A04E2A78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99009F00-DC1C-4399-974D-013A04E2A78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99009F00-DC1C-4399-974D-013A04E2A78D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
