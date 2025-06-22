@@ -1,15 +1,13 @@
 ﻿namespace DapperDemoApp.Migrations
 {
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<DapperDemoApp.AppDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "DapperDemoApp.AppDbContext";
         }
 
         protected override void Seed(DapperDemoApp.AppDbContext context)

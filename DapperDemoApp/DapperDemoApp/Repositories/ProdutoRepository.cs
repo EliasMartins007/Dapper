@@ -15,7 +15,7 @@ namespace DapperDemoApp
         private string _connectionString;
         public ProdutoRepository()
         {
-            _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            _connectionString = ConfigurationManager.ConnectionStrings["DapperDBConnection"].ConnectionString;
         }
 
         private IDbConnection Connection => new SqlConnection(_connectionString);
