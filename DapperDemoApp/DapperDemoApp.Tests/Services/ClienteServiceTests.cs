@@ -43,12 +43,15 @@ namespace DapperDemoApp.Tests
         [Test]
         public void Remover_DeveExcluirCliente()
         {
-            _service.Adicionar(new Cliente { Nome = "Remover", Email = "x@x.com" });
+            _service.Adicionar(new Cliente { Nome = "elias", Email = "eliasteste@gmail.com" });
 
             var sucesso = _service.Remover(1);
             //Assert.IsTrue(sucesso);
             //Assert.IsNull(_service.ObterPorId(1));
         }
+
+
+
     }
 }
 
